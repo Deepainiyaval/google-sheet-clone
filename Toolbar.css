@@ -1,0 +1,89 @@
+.toolbar {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background: #f3f3f3; /* Google Sheets Toolbar Background */
+    border-bottom: 2px solid #ccc;
+    align-items: center;
+  }
+  
+  button {
+    padding: 8px;
+    cursor: pointer;
+    background: white; /* Background Color */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: black; /* This Makes the Icon Always Visible */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #e0e0e0; /* Light Grey Hover Like Google Sheets */
+  }
+  
+  button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+  
+  button:active {
+    background: #d1d1d1; /* Click Effect */
+  }
+  
+  button b,
+button i,
+button span {
+  color: black; /* Black Icons for B, I, Undo, Redo */
+  font-weight: bold;
+  font-style: italic;
+  font-size: 18px;
+  
+}
+
+button span {
+  font-size: 20px; /* Undo and Redo Icon Size */
+}
+  
+  
+ 
+  
+  
+  
+  .text-color {
+    position: relative;
+    display: flex;
+    align-items: center; /* Align the icon properly */
+    margin-left: 10px;   /* Add Space between Buttons */
+    cursor: pointer;
+  }
+  
+  .icon {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .underline {
+    width: 20px;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    bottom: -3px;
+  }
+  
+  .text-color input[type="color"] {
+    width: 30px;
+    height: 30px;
+    opacity: 0; /* Hidden Color Picker */
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+  }
+  

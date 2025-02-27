@@ -1,0 +1,37 @@
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.toolbar {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background: white;
+  border-bottom: 2px solid #ccc;
+}
+
+button {
+  padding: 8px;
+  cursor: pointer;
+  background: transparent;
+  font-size: 18px;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.text-color {
+  position: relative;
+  display: inline-block;
+}
+
+.underline {
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  bottom: -3px;
+}
